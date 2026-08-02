@@ -1,0 +1,64 @@
+name: Daily Buyee scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      baseline:
+        description: Treat this run as the initial baseline
+        type: boolean
+        default: false
+  schedule:
+    - cron: "15 20 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: buyee-tracker
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx playwright install --with-deps chromium
+
+      - name: Scan searches
+        run: npm run scrape
+        env:
+          BASELINE: ${{ inputs.baseline || 'false' }}
+
+      - name: Save results
+        run: |
+          git config user.name "buyee-tracker"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/seen.json public/data/feed.json
+          git diff --cached --quiet || git commit -m "Update daily finds"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy feed
+        id: deployment
+        uses: actions/deploy-pages@v4
