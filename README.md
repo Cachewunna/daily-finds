@@ -1,6 +1,6 @@
 # Daily Finds
 
-A free daily Buyee/Mercari search tracker. It checks the configured searches, remembers listing IDs, and publishes only newly discovered listings to a mobile-friendly feed.
+A  chee
 
 ## First run
 
