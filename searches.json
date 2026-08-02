@@ -1,0 +1,37 @@
+[
+  {
+    "id": "mens-xl-long-sleeves",
+    "label": "Men's XL long-sleeve shirts under A$50",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&searchType=filter&keyword=XL&category_id=1709&price_min=319&price_max=5320&currencyCode=AUD&status=on_sale"
+  },
+  {
+    "id": "baby-bibs",
+    "label": "Baby bibs",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&category_id=967&currencyCode=AUD&status=on_sale"
+  },
+  {
+    "id": "baby-wrestling-clothes",
+    "label": "Baby wrestling clothes",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&searchType=filter&keyword=%E3%83%97%E3%83%AD%E3%83%AC%E3%82%B9&category_id=7732&currencyCode=AUD&status=on_sale"
+  },
+  {
+    "id": "baseball-baby-clothes",
+    "label": "Baseball baby clothes",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&searchType=filter&keyword=%E9%87%8E%E7%90%83&category_id=7732&currencyCode=AUD&status=on_sale"
+  },
+  {
+    "id": "baseball-accessories",
+    "label": "Baseball-themed accessories",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&searchType=filter&keyword=%E9%87%8E%E7%90%83&category_id=67&currencyCode=AUD&status=on_sale"
+  },
+  {
+    "id": "retro-home-accessories",
+    "label": "Retro home accessories",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&searchType=filter&keyword=%E3%83%AC%E3%83%88%E3%83%AD&category_id=67&currencyCode=AUD&status=on_sale"
+  },
+  {
+    "id": "retro-mirrors",
+    "label": "Retro mirrors",
+    "url": "https://buyee.jp/mercari/search?limit=100&lang=en&page=1&searchType=filter&keyword=%E3%83%AC%E3%83%88%E3%83%AD&category_id=4525&currencyCode=AUD&status=on_sale"
+  }
+]

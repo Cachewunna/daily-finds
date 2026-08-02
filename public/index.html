@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daily Finds</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div><p class="eyebrow">BUYEE SOURCING TRACKER</p><h1>Daily Finds</h1></div>
+    <div class="status" id="status">Loading today’s scan…</div>
+  </header>
+  <nav aria-label="Feed filters">
+    <button class="active" data-view="new">New finds</button>
+    <button data-view="saved">Saved <span id="saved-count">0</span></button>
+    <button data-view="dismissed">Dismissed</button>
+  </nav>
+  <main>
+    <section class="controls">
+      <label><span>Search</span><input id="query" type="search" placeholder="Titles, categories…"></label>
+      <label><span>Category</span><select id="category"><option value="">All searches</option></select></label>
+      <label><span>Maximum A$</span><input id="max-price" type="number" min="0" placeholder="Any"></label>
+    </section>
+    <div class="summary"><strong id="result-count">0 finds</strong><span id="last-run"></span></div>
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <p class="empty" id="empty" hidden>No listings match these filters.</p>
+  </main>
+  <template id="card-template">
+    <article class="card">
+      <a class="image-wrap listing-link" target="_blank" rel="noopener"><img loading="lazy" alt=""></a>
+      <div class="card-body">
+        <p class="tags"></p><a class="title listing-link" target="_blank" rel="noopener"></a>
+        <div class="price-row"><strong class="price"></strong><span class="yen"></span></div>
+        <div class="actions"><button class="save">☆ Save</button><button class="dismiss">Dismiss</button></div>
+      </div>
+    </article>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
