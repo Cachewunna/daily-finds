@@ -1,8 +1,44 @@
 {
-  "generatedAt": null,
-  "baselineComplete": false,
+  "generatedAt": "2026-08-02T05:07:45.394Z",
+  "baselineComplete": true,
   "scanned": 0,
   "newCount": 0,
-  "errors": [],
+  "errors": [
+    {
+      "search": "Men's XL long-sleeve shirts under A$50",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    },
+    {
+      "search": "Baby bibs",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    },
+    {
+      "search": "Baby wrestling clothes",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    },
+    {
+      "search": "Baseball baby clothes",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    },
+    {
+      "search": "Baseball-themed accessories",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    },
+    {
+      "search": "Retro home accessories",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    },
+    {
+      "search": "Retro mirrors",
+      "page": 1,
+      "message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"/mercari/item/\"]').first()\n"
+    }
+  ],
   "items": []
 }
